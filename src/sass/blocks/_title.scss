@@ -1,0 +1,45 @@
+.title {
+    &__fz12 {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color:#fff;
+        &.note {
+            color: $notes;
+        }
+    }
+    &__fz14 {
+        margin-bottom: 0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #fff;
+        &.note {
+            color: $notes;
+        }
+        &.main {
+            color: $main-color;
+        }
+        &.bold {
+            font-weight: 700;
+        }
+        &.error {
+            color: #FF8991;
+        }
+    }
+    &__fz16 {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 26px;
+        color: #fff;
+        &.main {
+            color: $main-color;
+        }
+    }
+    &__fz20 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+        color: #fff;
+    }
+}

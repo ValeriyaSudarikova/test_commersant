@@ -1,0 +1,160 @@
+.organisation-section {
+    height: 1070px;
+    .header {
+        align-items: center;
+        &__links {
+            position: relative;
+            .filter {
+                position: relative;
+                width: 465px;
+                height: 36px;
+                display: block;
+                background: #3E4459;
+                border-radius: 5px;
+                border: none;
+                padding-left: 15px;
+                &__submit {
+                    margin-left: 26px;
+                    margin-right: 23px;
+                    width: 112px;
+                    height: 36px;
+                    background: #FFFFFF;
+                    border-radius: 6px;
+                    border: none;
+                    color: black;
+                    transition: 0.5s all;
+                    &:hover {
+                        background: $main-color;
+                        color: #FFF;
+                    }
+                }
+            }      
+            label {
+                position: absolute;
+                left: 430px;
+                z-index: 3;
+            }
+
+        }
+    }
+    .organisation {
+        position: relative;
+        padding: 17px 10px;
+        margin: 40px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        background: #383E57;
+        box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.15);
+        border-radius: 18px;
+        &__list {
+            height: 789px;
+            overflow-y: scroll;
+            list-style: none;
+            padding-left: 0;
+            &::-webkit-scrollbar {
+                height: 100%;
+                width: 15px;
+                background: #3E4459;
+                border-radius: 6px;
+            }
+            &::-webkit-scrollbar-thumb {
+                width: 11px;
+                height: 246px;
+                background: #23273A;
+                border-radius: 6px;
+            }
+            &-item {
+                width: 98%;
+                height: 53px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+                .icon {
+                    margin-right: 10px;
+                }
+                .name {
+                    position: relative;
+                    width: 200px;
+                    &.first {
+                        width: 227px;
+                        &::after {
+                            content: none;
+                        }
+                    }
+                    &::after {
+                        content:' ';
+                        width: 1px;
+                        height: 53px;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        position: absolute;
+                        bottom: -19px;
+                        left: 200px;
+                    }
+                }
+                .id {
+                    position: relative;
+                    width: 132px;
+                    text-align: center;
+                    &.first {
+                        &::after {
+                            content: none;
+                        }
+                    }
+                    &::after {
+                        content:' ';
+                        width: 1px;
+                        height: 53px;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        position: absolute;
+                        bottom: -19px;
+                        left: 132px;
+                    }
+                }
+                .head {
+                    position: relative;
+                    width: 242px;
+                    padding-left: 30px;
+                    &::after {
+                        content:' ';
+                        width: 1px;
+                        height: 53px;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        position: absolute;
+                        bottom: -19px;
+                        left: 242px;
+                    }
+                    &.first {
+                        &::after {
+                            content: none;
+                        }
+                    }
+                }
+                .address {
+                    position: relative;
+                    width: 403px;
+                    padding-left: 27px;
+                    &::after {
+                        content:' ';
+                        width: 1px;
+                        height: 53px;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        position: absolute;
+                        bottom: -19px;
+                        left: 403px;
+                    }
+                    &.first {
+                        &::after {
+                            content: none;
+                        }
+                    }
+                }
+                .icon__edit {
+                    margin-left: 11px;
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,65 @@
+.menu__context {
+    display: none;
+    height: 1070px;
+    width: calc(100% - 241px);
+    position: absolute;
+    left: 241px;
+    background-color: #4D5474;
+    &.active {
+        display: block;
+    }
+    .header {
+        margin: 55px 79px 50px 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &__time {
+            display: block;
+            
+        }
+        &__name {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 27px;
+            color: #FFFFFF;
+            cursor: default;
+        }
+        &__links {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            &-item {
+                margin-right: 23px;
+                cursor: pointer;
+                .plus {
+                    width: 28px;
+                    height: 28px;
+                    fill: #fff;
+                    &:hover {
+                        width: 32px;
+                        height: 32px;
+                        fill: $main-color;
+                    }
+                }             
+                &:hover {
+                    svg path {
+                        fill: $main-color;
+                    }
+                }
+                &:nth-child(2) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    &.fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    &.hide {
+        display: none;
+    }
+    &.show {
+        display: block;
+    }
+}
